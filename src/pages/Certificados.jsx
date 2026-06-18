@@ -2,7 +2,7 @@ function Certificados() {
   return (
     <div>
       <h1>Certificados</h1>
-      <p>Gestión documental y trazabilidad.</p>
+      <p>Control documental y trazabilidad.</p>
     </div>
   );
 }
