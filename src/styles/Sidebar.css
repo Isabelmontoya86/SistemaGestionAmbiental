@@ -1,0 +1,62 @@
+.Sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#0F2F2F;
+    color:white;
+    padding:30px 20px;
+    box-sizing:border-box;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.logo span{
+    color:#57C84D;
+}
+
+.subtitle{
+    color:#9fb3b3;
+    font-size:14px;
+    margin-bottom:40px;
+}
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    padding:14px 18px;
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    transition:.25s;
+}
+
+.menu a:hover{
+    background:#1A4A4A;
+}
+
+.menu a.active{
+    background:#2F7D32;
+}
+
+.bottom{
+    margin-top:auto;
+}
+
+.bottom a{
+    color:#B8D8B8;
+}

@@ -1,39 +1,73 @@
-function Sidebar() {
-  return (
-    <div
-      style={{
-        width: "250px",
-        backgroundColor: "#1f2937",
-        color: "white",
-        minHeight: "100vh",
-        padding: "20px",
-      }}
-    >
-      <h2>🌱 EcoGestión</h2>
+import "../styles/sidebar.css";
+import { Link } from "react-router-dom";
 
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        <li style={{ marginBottom: "15px" }}>
-          Dashboard
-        </li>
+import {
+ FaChartPie,
+ FaRecycle,
+ FaIndustry,
+ FaFileInvoice,
+ FaChartLine,
+ FaLeaf,
+ FaRobot
+} from "react-icons/fa";
 
-        <li style={{ marginBottom: "15px" }}>
-          Residuos
-        </li>
+function Sidebar(){
 
-        <li style={{ marginBottom: "15px" }}>
-          Gestores
-        </li>
+    return(
 
-        <li style={{ marginBottom: "15px" }}>
-          Certificados
-        </li>
+        <aside className="sidebar">
 
-        <li style={{ marginBottom: "15px" }}>
-          Indicadores
-        </li>
-      </ul>
-    </div>
-  );
+            <h2 className="logo">
+                <span>Eco</span>Gestión
+            </h2>
+
+            <p className="subtitle">
+                Plataforma Inteligente
+            </p>
+
+            <nav className="menu">
+
+                <Link to="/">
+                    <FaChartPie/>
+                    Dashboard
+                </Link>
+
+                <Link to="/residuos">
+                    <FaRecycle/>
+                    Residuos
+                </Link>
+
+                <Link to="/gestores">
+                    <FaIndustry/>
+                    Gestores
+                </Link>
+
+                <Link to="/certificados">
+                    <FaFileInvoice/>
+                    Certificados
+                </Link>
+
+                <Link to="/indicadores">
+                    <FaChartLine/>
+                    Indicadores
+                </Link>
+
+                <Link to="/economia-circular">
+                    <FaLeaf/>
+                    Economía Circular
+                </Link>
+
+                <Link to="/ia">
+                    <FaRobot/>
+                    IA Ambiental
+                </Link>
+
+            </nav>
+
+        </aside>
+
+    );
+
 }
 
 export default Sidebar;
